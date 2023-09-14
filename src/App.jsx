@@ -1,10 +1,17 @@
 
+import { useState } from "react";
 import "./App.css";
 import Cart from "./components/cart/Cart";
 import Courses from "./components/courses/Courses";
 
 function App() {
   
+  const [courses , setCourse] = useState([]);
+
+  const handleCourse = (data) =>{
+    const newData = [...courses , data];
+    setCourse(newData)
+  }
 
   return (
     <div className="max-w-7xl mx-auto">
@@ -14,11 +21,13 @@ function App() {
 
       <div className="flex gap-6 mt-8">
         <section className="w-3/4">
-          <Courses></Courses>
+          <Courses 
+          handleCourse={handleCourse}
+          ></Courses>
         </section>
 
         <section className="w-1/4">
-          <Cart></Cart>
+          <Cart courses={courses}></Cart>
         </section>
       </div>
     </div>
