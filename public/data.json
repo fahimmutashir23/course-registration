@@ -1,0 +1,75 @@
+[
+    {
+      "course_id": 1,
+      "course_name": "Introduction to OOP Python",
+      "course_credit": 3,
+      "course_price": 15000,
+      "course_description": "This comprehensive web development course covers HTML, CSS, and JavaScript to help you build responsive.",
+      "cover_img": "https://i.ibb.co/S67XKHN/Rectangle-2.png"
+    },
+    {
+      "course_id": 2,
+      "course_name": "Database (MySQL)",
+      "course_credit": 4,
+      "course_price": 25000,
+      "course_description": "Take your front-end development skills to the next level with this advanced course.",
+      "cover_img": "https://i.ibb.co/3p86kGF/Rectangle-2-1.png"
+    },
+    {
+      "course_id": 3,
+      "course_name": "Introduction to C Programming",
+      "course_credit": 3,
+      "course_price": 30000,
+      "course_description": "Master server-side development with Node.js. Explore topics like RESTful APIs, database integration.",
+      "cover_img": "https://i.ibb.co/R6m3Myj/Rectangle-2-2.png"
+    },
+    {
+      "course_id": 4,
+      "course_name": "Introduction to Algorithms",
+      "course_credit": 6,
+      "course_price": 27000,
+      "course_description": "Join our intensive full-stack bootcamp and become a well-rounded web developer.",
+      "cover_img": "https://i.ibb.co/Dr7kxsg/Rectangle-2-3.png"
+    },
+    {
+      "course_id": 5,
+      "course_name": "Introduction to C++ for DSA",
+      "course_credit": 2,
+      "course_price": 13000,
+      "course_description": "Learn how to create visually appealing and responsive web designs using HTML and CSS.",
+      "cover_img": "https://i.ibb.co/Y0Ghqky/Rectangle-2-4.png"
+    },
+    {
+      "course_id": 6,
+      "course_name": "Software Engineering",
+      "course_credit": 3,
+      "course_price": 17000,
+      "course_description": "Become a web security expert and learn ethical hacking techniques.",
+      "cover_img": "https://i.ibb.co/g9zjVKt/Rectangle-2-5.png"
+    },
+    {
+      "course_id": 7,
+      "course_name": "Problem-Solving Part",
+      "course_credit": 4,
+      "course_price": 29000,
+      "course_description": "Specialize in building e-commerce websites. Learn about payment gateways, product catalogs.",
+      "cover_img": "https://i.ibb.co/28rctbr/Rectangle-2-6.png"
+    },
+    {
+      "course_id": 8,
+      "course_name": "Basic Data Structures",
+      "course_credit": 3,
+      "course_price": 40000,
+      "course_description": "Explore mobile web development with HTML5, CSS3, and responsive design.",
+      "cover_img": "https://i.ibb.co/ZMGvGxZ/Rectangle-3.png"
+    },
+    {
+      "course_id": 9,
+      "course_name": "AWS, Cloud Computing",
+      "course_credit": 2,
+      "course_price": 33000,
+      "course_description": "Learn the principles of project management for web development projects.",
+      "cover_img": "https://i.ibb.co/DknzLs1/Rectangle-3-1.png"
+    }
+  ]
+  
