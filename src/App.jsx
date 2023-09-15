@@ -8,26 +8,25 @@ function App() {
   const [courses, setCourse] = useState([]);
   const [credit, setCredit] = useState(0);
   const [price, setPrice] = useState(0);
-  const [totalRemaining, setTotalRemainis] = useState(0);
 
   const handleCourse = (data) => {
-    // const isexist = courses.find((course) => course.id === data.id);
+    const isexist = courses.find((course) => course.course_id === data.course_id);
 
-    const remaining = 20 - credit;
-    if (remaining <= 0) {
-      toast("your limit is 20 hour");
-    } else {
+    if(isexist){
+      toast("don't access multiple course")
+    }
+    else{
       const newData = [...courses, data];
       setCourse(newData);
-
+  
       const newCredit = credit + data.course_credit;
       setCredit(newCredit);
-
+  
       const total = price + data.course_price;
       setPrice(total);
-
-      setTotalRemainis(remaining);
     }
+
+      
   };
 
   return (
@@ -46,7 +45,6 @@ function App() {
             courses={courses}
             credit={credit}
             price={price}
-            totalRemaining={totalRemaining}
           ></Cart>
         </section>
       </div>

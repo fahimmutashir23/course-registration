@@ -1,14 +1,18 @@
 import PropTypes from "prop-types";
 import CartItem from "../cart-item/CartItem";
+import { toast } from "react-toastify";
 
-const Cart = ({ courses, credit, price, totalRemaining }) => {
+const Cart = ({ courses, credit, price }) => {
   
+  const remaining = 20 - credit;
+  if (remaining <= 0) {
+    toast('you are cross your credit limit')
+  }
   
-
   return (
     <div className="card bg-base-100 shadow-xl p-4">
       <h1 className="text-xl font-bold text-indigo-700 mb-3">
-        Credit Hour Remaining: {totalRemaining}hr
+        Credit Hour Remaining: {remaining}hr
       </h1>
       <hr />
       <div className="mb-3">
@@ -35,7 +39,6 @@ Cart.propTypes = {
   courses: PropTypes.array,
   credit: PropTypes.number,
   price: PropTypes.number,
-  totalRemaining: PropTypes.number
 };
 
 export default Cart;
