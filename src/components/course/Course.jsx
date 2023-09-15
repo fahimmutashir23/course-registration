@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
 import { BsBook, BsCurrencyDollar } from "react-icons/bs";
 
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Course = ({ datas, handleCourse }) => {
 
   const {
@@ -32,6 +35,7 @@ const Course = ({ datas, handleCourse }) => {
           <button
           onClick={()=>handleCourse(datas)}
            className="btn btn-primary w-full">Select</button>
+           <ToastContainer></ToastContainer>
         </div>
       </div>
     </div>

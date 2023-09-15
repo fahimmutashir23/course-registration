@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 const CartItem = ({course}) => {
     const {course_name} = course;
     return (
-        <div>
-            
-        </div>
+            <li className='text-base font-normal list-decimal'>{course_name}</li>      
     );
 };
 

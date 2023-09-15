@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import Course from "../course/Course";
 
+
 const Courses = ({handleCourse}) => {
   const [datas, setDatas] = useState([]);
 
