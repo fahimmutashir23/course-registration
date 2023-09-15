@@ -13,13 +13,17 @@ function App() {
     const isexist = courses.find((course) => course.course_id === data.course_id);
 
     if(isexist){
-      toast("don't access multiple course")
+      toast("don't access multiple course", {
+        position: toast.POSITION.TOP_CENTER
+      })
     }
     else{
       const newCredit = credit + data.course_credit;
       
       if (newCredit > 20) {
-        return toast('you are cross your credit limit')
+        return toast('you are cross your credit limit', {
+          position: toast.POSITION.TOP_CENTER
+        })
       }
       else{
         
@@ -42,12 +46,12 @@ function App() {
         Course Registration
       </h1>
 
-      <div className="flex gap-6 mt-8">
-        <section className="w-3/4">
+      <div className="flex flex-col-reverse md:flex-row gap-6 mt-8">
+        <section className="md:w-3/4">
           <Courses handleCourse={handleCourse}></Courses>
         </section>
 
-        <section className="w-1/4">
+        <section className="md:w-1/4">
           <Cart
             courses={courses}
             credit={credit}

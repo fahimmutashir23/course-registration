@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { BsBook, BsCurrencyDollar } from "react-icons/bs";
-
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -13,6 +12,7 @@ const Course = ({ datas, handleCourse }) => {
     course_description,
     cover_img,
   } = datas;
+
   return (
     <div>
       <div className="card bg-base-100 shadow-xl">
