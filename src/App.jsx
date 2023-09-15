@@ -16,14 +16,21 @@ function App() {
       toast("don't access multiple course")
     }
     else{
-      const newData = [...courses, data];
-      setCourse(newData);
-  
       const newCredit = credit + data.course_credit;
-      setCredit(newCredit);
-  
-      const total = price + data.course_price;
-      setPrice(total);
+      
+      if (newCredit > 20) {
+        return toast('you are cross your credit limit')
+      }
+      else{
+        
+        setCredit(newCredit);
+
+        const newData = [...courses, data];
+        setCourse(newData);
+    
+        const total = price + data.course_price;
+        setPrice(total);
+      }
     }
 
       

@@ -1,13 +1,9 @@
 import PropTypes from "prop-types";
 import CartItem from "../cart-item/CartItem";
-import { toast } from "react-toastify";
 
 const Cart = ({ courses, credit, price }) => {
   
   const remaining = 20 - credit;
-  if (remaining <= 0) {
-    toast('you are cross your credit limit')
-  }
   
   return (
     <div className="card bg-base-100 shadow-xl p-4">
